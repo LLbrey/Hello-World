@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.solid{
+    width: 100%;
+    height: 250px;
+    background-color: brown;
+    border-bottom: 20px solid #000;
+    position: absolute;
+    top: -250px;
+    transition: top 1s ease-in-out;
+    animation: render 10s ease-in-out infinite ;
+}
+.solid p{
+    text-align: center;
+    margin: 27px;
+    font-size: 50px;
+    color: rgb(240, 240, 240);
+    animation: bits 10s ease-in-out infinite;
+
+
+    
+}
+.solid:hover{
+    top: 0;
+}
+@keyframes render{
+    0%{
+        background-color: rgb(255, 255, 255);
+    }
+    
+    50%{
+        background-color: rgb(0, 0, 0);
+    }
+    
+    100%{
+        background-color: rgb(255, 255, 255);
+    }
+}
+@keyframes bits {
+    0%{
+        color: rgb(0, 0, 0);
+    }
+    50%{
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        color: rgb(0, 0, 0);
+    }
+}
+.box{
+    width: 280px;
+    height: 150px;
+    text-align: center;
+    font-size: 80px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: 40px;
+    left: 330px;
+    animation: piti 15s ease-in-out infinite;
+
+}
+@keyframes piti {
+    0%{
+        top: 40px;
+        left: 330px;
+        background-color: rgb(0, 0, 0);
+    }
+    25%{
+        top: 100px ;
+        left: -10px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+        
+    
+    }
+    50%{
+        top: 300px;
+        left: 1000px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0%;
+    }
+    75%{
+        top: 300px;
+        left: 100px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 50%;
+    }
+
+}
+
+.xob{
+    width: 280px;
+    height: 150px;
+    text-align: center;
+    font-size: 80px;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top: -190px;
+    left: 600px;
+    animation: ripi  15s ease-in-out infinite;
+}
+@keyframes ripi{
+        0%{
+            top: -190px;
+            left: 600px;
+        
+            background-color: rgb(0, 0, 0);
+        }
+        25%{
+            top: 150px ;
+            left: 1000px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+            
+            
+    
+        }
+        50%{
+            top: 90px;
+            left: 330px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 0%;
+        }
+        75%{
+            top: -230px;
+            left: 450px;
+            background-color: rgb(0, 0, 0);
+            border-radius: 50%;
+        }
+}
